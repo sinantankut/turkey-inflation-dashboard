@@ -1,0 +1,281 @@
+{
+  "description": "ENAG Inflation Data (Monthly and Annualized) from October 2020 to March 2025",
+  "data": [
+    {
+      "Date": "Eki 2020",
+      "ENAG Monthly (%)": 2.56,
+      "ENAG Annualized (%)": null
+    },
+    {
+      "Date": "Kas 2020",
+      "ENAG Monthly (%)": 3.43,
+      "ENAG Annualized (%)": null
+    },
+    {
+      "Date": "Ara 2020",
+      "ENAG Monthly (%)": 4.08,
+      "ENAG Annualized (%)": null
+    },
+    {
+      "Date": "Oca 2021",
+      "ENAG Monthly (%)": 2.99,
+      "ENAG Annualized (%)": null
+    },
+    {
+      "Date": "Şub 2021",
+      "ENAG Monthly (%)": 1.84,
+      "ENAG Annualized (%)": null
+    },
+    {
+      "Date": "Mar 2021",
+      "ENAG Monthly (%)": 3.36,
+      "ENAG Annualized (%)": null
+    },
+    {
+      "Date": "Nis 2021",
+      "ENAG Monthly (%)": 2.62,
+      "ENAG Annualized (%)": null
+    },
+    {
+      "Date": "May 2021",
+      "ENAG Monthly (%)": 3.94,
+      "ENAG Annualized (%)": null
+    },
+    {
+      "Date": "Haz 2021",
+      "ENAG Monthly (%)": 3.28,
+      "ENAG Annualized (%)": null
+    },
+    {
+      "Date": "Tem 2021",
+      "ENAG Monthly (%)": 4.89,
+      "ENAG Annualized (%)": null
+    },
+    {
+      "Date": "Ağu 2021",
+      "ENAG Monthly (%)": 4.06,
+      "ENAG Annualized (%)": null
+    },
+    {
+      "Date": "Eyl 2021",
+      "ENAG Monthly (%)": 2.89,
+      "ENAG Annualized (%)": 48.07
+    },
+    {
+      "Date": "Eki 2021",
+      "ENAG Monthly (%)": 6.90,
+      "ENAG Annualized (%)": 54.34
+    },
+    {
+      "Date": "Kas 2021",
+      "ENAG Monthly (%)": 9.91,
+      "ENAG Annualized (%)": 64.01
+    },
+    {
+      "Date": "Ara 2021",
+      "ENAG Monthly (%)": 19.35,
+      "ENAG Annualized (%)": 88.07
+    },
+    {
+      "Date": "Oca 2022",
+      "ENAG Monthly (%)": 15.52,
+      "ENAG Annualized (%)": 110.95
+    },
+    {
+      "Date": "Şub 2022",
+      "ENAG Monthly (%)": 5.44,
+      "ENAG Annualized (%)": 118.41
+    },
+    {
+      "Date": "Mar 2022",
+      "ENAG Monthly (%)": 11.93,
+      "ENAG Annualized (%)": 136.52
+    },
+    {
+      "Date": "Nis 2022",
+      "ENAG Monthly (%)": 8.68,
+      "ENAG Annualized (%)": 150.49
+    },
+    {
+      "Date": "May 2022",
+      "ENAG Monthly (%)": 5.46,
+      "ENAG Annualized (%)": 154.15
+    },
+    {
+      "Date": "Haz 2022",
+      "ENAG Monthly (%)": 8.31,
+      "ENAG Annualized (%)": 166.53
+    },
+    {
+      "Date": "Tem 2022",
+      "ENAG Monthly (%)": 5.03,
+      "ENAG Annualized (%)": 166.88
+    },
+    {
+      "Date": "Ağu 2022",
+      "ENAG Monthly (%)": 5.86,
+      "ENAG Annualized (%)": 171.50
+    },
+    {
+      "Date": "Eyl 2022",
+      "ENAG Monthly (%)": 5.30,
+      "ENAG Annualized (%)": 177.86
+    },
+    {
+      "Date": "Eki 2022",
+      "ENAG Monthly (%)": 7.18,
+      "ENAG Annualized (%)": 178.59
+    },
+    {
+      "Date": "Kas 2022",
+      "ENAG Monthly (%)": 4.24,
+      "ENAG Annualized (%)": 164.22
+    },
+    {
+      "Date": "Ara 2022",
+      "ENAG Monthly (%)": 5.18,
+      "ENAG Annualized (%)": 132.85
+    },
+    {
+      "Date": "Oca 2023",
+      "ENAG Monthly (%)": 9.26,
+      "ENAG Annualized (%)": 120.23
+    },
+    {
+      "Date": "Şub 2023",
+      "ENAG Monthly (%)": 7.21,
+      "ENAG Annualized (%)": 123.93
+    },
+    {
+      "Date": "Mar 2023",
+      "ENAG Monthly (%)": 5.08,
+      "ENAG Annualized (%)": 110.22
+    },
+    {
+      "Date": "Nis 2023",
+      "ENAG Monthly (%)": 4.86,
+      "ENAG Annualized (%)": 102.83
+    },
+    {
+      "Date": "May 2023",
+      "ENAG Monthly (%)": 7.35,
+      "ENAG Annualized (%)": 106.47
+    },
+    {
+      "Date": "Haz 2023",
+      "ENAG Monthly (%)": 8.54,
+      "ENAG Annualized (%)": 106.91
+    },
+    {
+      "Date": "Tem 2023",
+      "ENAG Monthly (%)": 13.18,
+      "ENAG Annualized (%)": 122.96
+    },
+    {
+      "Date": "Ağu 2023",
+      "ENAG Monthly (%)": 8.59,
+      "ENAG Annualized (%)": 128.71
+    },
+    {
+      "Date": "Eyl 2023",
+      "ENAG Monthly (%)": 6.24,
+      "ENAG Annualized (%)": 130.75
+    },
+    {
+      "Date": "Eki 2023",
+      "ENAG Monthly (%)": 5.09,
+      "ENAG Annualized (%)": 126.25
+    },
+    {
+      "Date": "Kas 2023",
+      "ENAG Monthly (%)": 5.58,
+      "ENAG Annualized (%)": 129.16
+    },
+    {
+      "Date": "Ara 2023",
+      "ENAG Monthly (%)": 4.12,
+      "ENAG Annualized (%)": 126.85
+    },
+    {
+      "Date": "Oca 2024",
+      "ENAG Monthly (%)": 9.38,
+      "ENAG Annualized (%)": 127.10
+    },
+    {
+      "Date": "Şub 2024",
+      "ENAG Monthly (%)": 4.32,
+      "ENAG Annualized (%)": 120.98
+    },
+    {
+      "Date": "Mar 2024",
+      "ENAG Monthly (%)": 5.68,
+      "ENAG Annualized (%)": 122.24
+    },
+    {
+      "Date": "Nis 2024",
+      "ENAG Monthly (%)": 5.02,
+      "ENAG Annualized (%)": 122.58
+    },
+    {
+      "Date": "May 2024",
+      "ENAG Monthly (%)": 5.66,
+      "ENAG Annualized (%)": 119.08
+    },
+    {
+      "Date": "Haz 2024",
+      "ENAG Monthly (%)": 4.27,
+      "ENAG Annualized (%)": 110.46
+    },
+    {
+      "Date": "Tem 2024",
+      "ENAG Monthly (%)": 5.91,
+      "ENAG Annualized (%)": 96.94
+    },
+    {
+      "Date": "Ağu 2024",
+      "ENAG Monthly (%)": 3.47,
+      "ENAG Annualized (%)": 87.65
+    },
+    {
+      "Date": "Eyl 2024",
+      "ENAG Monthly (%)": 5.34,
+      "ENAG Annualized (%)": 86.06
+    },
+    {
+      "Date": "Eki 2024",
+      "ENAG Monthly (%)": 5.57,
+      "ENAG Annualized (%)": 86.91
+    },
+    {
+      "Date": "Kas 2024",
+      "ENAG Monthly (%)": 4.06,
+      "ENAG Annualized (%)": 84.22
+    },
+    {
+      "Date": "Ara 2024",
+      "ENAG Monthly (%)": 2.34,
+      "ENAG Annualized (%)": 81.07
+    },
+     {
+      "Date": "Oca 2025",
+      "ENAG Monthly (%)": 8.22,
+      "ENAG Annualized (%)": 79.15
+    },
+     {
+      "Date": "Şub 2025",
+      "ENAG Monthly (%)": 3.37,
+      "ENAG Annualized (%)": 77.52
+    },
+     {
+      "Date": "Mar 2025",
+      "ENAG Monthly (%)": 3.91,
+      "ENAG Annualized (%)": 74.55
+    },
+    {
+        "Date": "Nis 2025",
+        "ENAG Monthly (%)": 4.46,
+        "ENAG Annualized (%)": 73.88
+        }
+        
+  ]
+}

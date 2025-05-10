@@ -1,0 +1,552 @@
+[
+  {
+    "year": 2020,
+    "month": "Ekim",
+    "release_date": "2020-11-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 2.45,
+      "ytd_change_pct": 10.71,
+      "yoy_change_pct": 12.40
+    }
+  },
+  {
+    "year": 2020,
+    "month": "Kasım",
+    "release_date": "2020-12-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 1.94,
+      "ytd_change_pct": 12.86,
+      "yoy_change_pct": 14.07
+    }
+  },
+  {
+    "year": 2020,
+    "month": "Aralık",
+    "release_date": "2021-01-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 1.36,
+      "ytd_change_pct": 14.40,
+      "yoy_change_pct": 14.40
+    }
+  },
+  {
+    "year": 2021,
+    "month": "Ocak",
+    "release_date": "2021-02-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 1.16,
+      "ytd_change_pct": 1.16,
+      "yoy_change_pct": 15.05
+    }
+  },
+  {
+    "year": 2021,
+    "month": "Şubat",
+    "release_date": "2021-03-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 1.48,
+      "ytd_change_pct": 2.66,
+      "yoy_change_pct": 15.45
+    }
+  },
+  {
+    "year": 2021,
+    "month": "Mart",
+    "release_date": "2021-04-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 1.13,
+      "ytd_change_pct": 3.82,
+      "yoy_change_pct": 16.37
+    }
+  },
+  {
+    "year": 2021,
+    "month": "Nisan",
+    "release_date": "2021-05-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 1.01,
+      "ytd_change_pct": 4.87,
+      "yoy_change_pct": 16.34
+    }
+  },
+  {
+    "year": 2021,
+    "month": "Mayıs",
+    "release_date": "2021-06-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 1.67,
+      "ytd_change_pct": 6.62,
+      "yoy_change_pct": 15.78
+    }
+  },
+  {
+    "year": 2021,
+    "month": "Haziran",
+    "release_date": "2021-07-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 0.36,
+      "ytd_change_pct": 7.01,
+      "yoy_change_pct": 16.12
+    }
+  },
+  {
+    "year": 2021,
+    "month": "Temmuz",
+    "release_date": "2021-08-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 1.52,
+      "ytd_change_pct": 8.64,
+      "yoy_change_pct": 17.38
+    }
+  },
+  {
+    "year": 2021,
+    "month": "Ağustos",
+    "release_date": "2021-09-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 1.88,
+      "ytd_change_pct": 10.68,
+      "yoy_change_pct": 18.89
+    }
+  },
+  {
+    "year": 2021,
+    "month": "Eylül",
+    "release_date": "2021-10-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 2.22,
+      "ytd_change_pct": 13.14,
+      "yoy_change_pct": 19.77
+    }
+  },
+  {
+    "year": 2021,
+    "month": "Ekim",
+    "release_date": "2021-11-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 3.29,
+      "ytd_change_pct": 16.87,
+      "yoy_change_pct": 20.76
+    }
+  },
+  {
+    "year": 2021,
+    "month": "Kasım",
+    "release_date": "2021-12-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 4.71,
+      "ytd_change_pct": 22.38,
+      "yoy_change_pct": 24.05
+    }
+  },
+  {
+    "year": 2021,
+    "month": "Aralık",
+    "release_date": "2022-01-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 9.65,
+      "ytd_change_pct": 34.18,
+      "yoy_change_pct": 34.18
+    }
+  },
+  {
+    "year": 2022,
+    "month": "Ocak",
+    "release_date": "2022-02-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 13.78,
+      "ytd_change_pct": 13.78,
+      "yoy_change_pct": 50.91
+    }
+  },
+  {
+    "year": 2022,
+    "month": "Şubat",
+    "release_date": "2022-03-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 4.44,
+      "ytd_change_pct": 18.83,
+      "yoy_change_pct": 55.32
+    }
+  },
+  {
+    "year": 2022,
+    "month": "Mart",
+    "release_date": "2022-04-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 6.29,
+      "ytd_change_pct": 26.31,
+      "yoy_change_pct": 63.25
+    }
+  },
+  {
+    "year": 2022,
+    "month": "Nisan",
+    "release_date": "2022-05-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 11.36,
+      "ytd_change_pct": 40.65,
+      "yoy_change_pct": 79.97
+    }
+  },
+  {
+    "year": 2022,
+    "month": "Mayıs",
+    "release_date": "2022-06-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 5.84,
+      "ytd_change_pct": 48.86,
+      "yoy_change_pct": 87.35
+    }
+  },
+  {
+    "year": 2022,
+    "month": "Haziran",
+    "release_date": "2022-07-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 4.03,
+      "ytd_change_pct": 54.86,
+      "yoy_change_pct": 94.19
+    }
+  },
+  {
+    "year": 2022,
+    "month": "Temmuz",
+    "release_date": "2022-08-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 4.09,
+      "ytd_change_pct": 61.20,
+      "yoy_change_pct": 99.11
+    }
+  },
+  {
+    "year": 2022,
+    "month": "Ağustos",
+    "release_date": "2022-09-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 2.29,
+      "ytd_change_pct": 64.90,
+      "yoy_change_pct": 99.91
+    }
+  },
+  {
+    "year": 2022,
+    "month": "Eylül",
+    "release_date": "2022-10-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 6.06,
+      "ytd_change_pct": 74.89,
+      "yoy_change_pct": 107.42
+    }
+  },
+  {
+    "year": 2022,
+    "month": "Ekim",
+    "release_date": "2022-11-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 3.96,
+      "ytd_change_pct": 81.83,
+      "yoy_change_pct": 108.77
+    }
+  },
+  {
+    "year": 2022,
+    "month": "Kasım",
+    "release_date": "2022-12-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 3.10,
+      "ytd_change_pct": 87.47,
+      "yoy_change_pct": 105.55
+    }
+  },
+  {
+    "year": 2022,
+    "month": "Aralık",
+    "release_date": "2023-01-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 2.94,
+      "ytd_change_pct": 92.97,
+      "yoy_change_pct": 92.97
+    }
+  },
+    {
+    "year": 2023,
+    "month": "Ocak",
+    "release_date": "2023-02-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 5.94,
+      "ytd_change_pct": 5.94,
+      "yoy_change_pct": 79.68
+    }
+  },
+  {
+    "year": 2023,
+    "month": "Şubat",
+    "release_date": "2023-03-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 3.83,
+      "ytd_change_pct": 10.00,
+      "yoy_change_pct": 78.62
+    }
+  },
+  {
+    "year": 2023,
+    "month": "Mart",
+    "release_date": "2023-04-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 2.95,
+      "ytd_change_pct": 13.24,
+      "yoy_change_pct": 73.02
+    }
+  },
+  {
+    "year": 2023,
+    "month": "Nisan",
+    "release_date": "2023-05-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 4.57,
+      "ytd_change_pct": 18.41,
+      "yoy_change_pct": 62.46
+    }
+  },
+  {
+    "year": 2023,
+    "month": "Mayıs",
+    "release_date": "2023-06-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 1.66,
+      "ytd_change_pct": 20.38,
+      "yoy_change_pct": 56.05
+    }
+  },
+  {
+    "year": 2023,
+    "month": "Haziran",
+    "release_date": "2023-07-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 3.46,
+      "ytd_change_pct": 24.54,
+      "yoy_change_pct": 55.19
+    }
+  },
+  {
+    "year": 2023,
+    "month": "Temmuz",
+    "release_date": "2023-08-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 9.84,
+      "ytd_change_pct": 36.80,
+      "yoy_change_pct": 63.76
+    }
+  },
+  {
+    "year": 2023,
+    "month": "Ağustos",
+    "release_date": "2023-09-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 8.80,
+      "ytd_change_pct": 48.83,
+      "yoy_change_pct": 74.17
+    }
+  },
+  {
+    "year": 2023,
+    "month": "Eylül",
+    "release_date": "2023-10-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 5.46,
+      "ytd_change_pct": 56.96,
+      "yoy_change_pct": 73.18
+    }
+  },
+  {
+    "year": 2023,
+    "month": "Ekim",
+    "release_date": "2023-11-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 3.69,
+      "ytd_change_pct": 62.76,
+      "yoy_change_pct": 72.73
+    }
+  },
+  {
+    "year": 2023,
+    "month": "Kasım",
+    "release_date": "2023-12-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 3.79,
+      "ytd_change_pct": 68.93,
+      "yoy_change_pct": 73.89
+    }
+  },
+  {
+    "year": 2023,
+    "month": "Aralık",
+    "release_date": "2024-01-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 3.52,
+      "ytd_change_pct": 74.88,
+      "yoy_change_pct": 74.88
+    }
+  },
+  {
+    "year": 2024,
+    "month": "Ocak",
+    "release_date": "2024-02-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 6.72,
+      "ytd_change_pct": 6.72,
+      "yoy_change_pct": 76.17
+    }
+  },
+   {
+    "year": 2024,
+    "month": "Şubat",
+    "release_date": "2024-03-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 4.07,
+      "ytd_change_pct": 11.06,
+      "yoy_change_pct": 76.58
+    }
+  },
+  {
+    "year": 2024,
+    "month": "Mart",
+    "release_date": "2024-04-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 3.93,
+      "ytd_change_pct": 15.42,
+      "yoy_change_pct": 78.25
+    }
+  },
+  {
+    "year": 2024,
+    "month": "Nisan",
+    "release_date": "2024-05-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 4.89,
+      "ytd_change_pct": 21.07,
+      "yoy_change_pct": 78.81
+    }
+  },
+  {
+    "year": 2024,
+    "month": "Mayıs",
+    "release_date": "2024-06-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 3.59,
+      "ytd_change_pct": 25.42,
+      "yoy_change_pct": 82.20
+    }
+  },
+  {
+    "year": 2024,
+    "month": "Haziran",
+    "release_date": "2024-07-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 3.42,
+      "ytd_change_pct": 29.71,
+      "yoy_change_pct": 82.14
+    }
+  },
+  {
+    "year": 2024,
+    "month": "Temmuz",
+    "release_date": "2024-08-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 4.21,
+      "ytd_change_pct": 35.16,
+      "yoy_change_pct": 72.80
+    }
+  },
+  {
+    "year": 2024,
+    "month": "Ağustos",
+    "release_date": "2024-09-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 1.73,
+      "ytd_change_pct": 37.50,
+      "yoy_change_pct": 61.57
+    }
+  },
+  {
+    "year": 2024,
+    "month": "Eylül",
+    "release_date": "2024-10-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 3.90,
+      "ytd_change_pct": 42.87,
+      "yoy_change_pct": 59.18
+    }
+  },
+  {
+    "year": 2024,
+    "month": "Ekim",
+    "release_date": "2024-11-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 3.64,
+      "ytd_change_pct": 48.07,
+      "yoy_change_pct": 59.10
+    }
+  },
+  {
+    "year": 2024,
+    "month": "Kasım",
+    "release_date": "2024-12-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 3.07,
+      "ytd_change_pct": 52.61,
+      "yoy_change_pct": 57.99
+    }
+  },
+  {
+    "year": 2024,
+    "month": "Aralık",
+    "release_date": "2025-01-01",
+    "cpi_wage_earners": {
+      "mom_change_pct": 1.74,
+      "ytd_change_pct": 55.27,
+      "yoy_change_pct": 55.27
+    }
+  },
+    {
+        "year": 2025,
+        "month": "Ocak",
+        "release_date": "2025-02-01",
+        "cpi_wage_earners": {
+        "mom_change_pct": 5.16,
+        "ytd_change_pct": 5.16,
+        "yoy_change_pct": 48.40
+        }
+    },
+    {
+        "year": 2025,
+        "month": "Şubat",
+        "release_date": "2025-03-01",
+        "cpi_wage_earners": {
+        "mom_change_pct": 3.19,
+        "ytd_change_pct": 8.51,
+        "yoy_change_pct": 45.35
+        }
+    },
+    {
+        "year": 2025,
+        "month": "Mart",
+        "release_date": "2025-04-01",
+        "cpi_wage_earners": {
+        "mom_change_pct": 3.79,
+        "ytd_change_pct": 12.63,
+        "yoy_change_pct": 46.23
+        }
+    },
+    {
+        "year": 2025,
+        "month": "Nisan",
+        "release_date": "2025-05-01",
+        "cpi_wage_earners": {
+        "mom_change_pct": 3.21,
+        "ytd_change_pct": 16.25,
+        "yoy_change_pct": 47.21
+        }
+    }
+]

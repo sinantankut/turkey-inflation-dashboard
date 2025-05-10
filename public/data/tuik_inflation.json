@@ -1,0 +1,281 @@
+{
+  "description": "TÜİK Inflation Data (Monthly and Annualized) from October 2020 to March 2025",
+  "data": [
+    {
+      "Date": "Eki 2020",
+      "TÜİK Monthly (%)": 2.13,
+      "TÜİK Annualized (%)": null
+    },
+    {
+      "Date": "Kas 2020",
+      "TÜİK Monthly (%)": 2.30,
+      "TÜİK Annualized (%)": null
+    },
+    {
+      "Date": "Ara 2020",
+      "TÜİK Monthly (%)": 1.25,
+      "TÜİK Annualized (%)": null
+    },
+    {
+      "Date": "Oca 2021",
+      "TÜİK Monthly (%)": 1.68,
+      "TÜİK Annualized (%)": null
+    },
+    {
+      "Date": "Şub 2021",
+      "TÜİK Monthly (%)": 0.91,
+      "TÜİK Annualized (%)": null
+    },
+    {
+      "Date": "Mar 2021",
+      "TÜİK Monthly (%)": 1.08,
+      "TÜİK Annualized (%)": null
+    },
+    {
+      "Date": "Nis 2021",
+      "TÜİK Monthly (%)": 1.68,
+      "TÜİK Annualized (%)": null
+    },
+    {
+      "Date": "May 2021",
+      "TÜİK Monthly (%)": 0.89,
+      "TÜİK Annualized (%)": null
+    },
+    {
+      "Date": "Haz 2021",
+      "TÜİK Monthly (%)": 1.94,
+      "TÜİK Annualized (%)": 17.53
+    },
+    {
+      "Date": "Tem 2021",
+      "TÜİK Monthly (%)": 1.80,
+      "TÜİK Annualized (%)": 18.95
+    },
+    {
+      "Date": "Ağu 2021",
+      "TÜİK Monthly (%)": 1.12,
+      "TÜİK Annualized (%)": 19.25
+    },
+    {
+      "Date": "Eyl 2021",
+      "TÜİK Monthly (%)": 1.25,
+      "TÜİK Annualized (%)": 19.58
+    },
+    {
+      "Date": "Eki 2021",
+      "TÜİK Monthly (%)": 2.39,
+      "TÜİK Annualized (%)": 19.89
+    },
+    {
+      "Date": "Kas 2021",
+      "TÜİK Monthly (%)": 3.51,
+      "TÜİK Annualized (%)": 21.30
+    },
+    {
+      "Date": "Ara 2021",
+      "TÜİK Monthly (%)": 13.58,
+      "TÜİK Annualized (%)": 36.08
+    },
+    {
+      "Date": "Oca 2022",
+      "TÜİK Monthly (%)": 11.10,
+      "TÜİK Annualized (%)": 48.68
+    },
+    {
+      "Date": "Şub 2022",
+      "TÜİK Monthly (%)": 4.81,
+      "TÜİK Annualized (%)": 54.43
+    },
+    {
+      "Date": "Mar 2022",
+      "TÜİK Monthly (%)": 5.46,
+      "TÜİK Annualized (%)": 61.12
+    },
+    {
+      "Date": "Nis 2022",
+      "TÜİK Monthly (%)": 7.25,
+      "TÜİK Annualized (%)": 69.95
+    },
+    {
+      "Date": "May 2022",
+      "TÜİK Monthly (%)": 2.98,
+      "TÜİK Annualized (%)": 73.47
+    },
+    {
+      "Date": "Haz 2022",
+      "TÜİK Monthly (%)": 4.95,
+      "TÜİK Annualized (%)": 78.59
+    },
+    {
+      "Date": "Tem 2022",
+      "TÜİK Monthly (%)": 2.37,
+      "TÜİK Annualized (%)": 79.59
+    },
+    {
+      "Date": "Ağu 2022",
+      "TÜİK Monthly (%)": 1.46,
+      "TÜİK Annualized (%)": 80.19
+    },
+    {
+      "Date": "Eyl 2022",
+      "TÜİK Monthly (%)": 3.08,
+      "TÜİK Annualized (%)": 83.45
+    },
+    {
+      "Date": "Eki 2022",
+      "TÜİK Monthly (%)": 3.54,
+      "TÜİK Annualized (%)": 85.51
+    },
+    {
+      "Date": "Kas 2022",
+      "TÜİK Monthly (%)": 2.88,
+      "TÜİK Annualized (%)": 84.38
+    },
+    {
+      "Date": "Ara 2022",
+      "TÜİK Monthly (%)": 1.18,
+      "TÜİK Annualized (%)": 64.25
+    },
+    {
+      "Date": "Oca 2023",
+      "TÜİK Monthly (%)": 6.65,
+      "TÜİK Annualized (%)": 57.67
+    },
+    {
+      "Date": "Şub 2023",
+      "TÜİK Monthly (%)": 3.15,
+      "TÜİK Annualized (%)": 55.18
+    },
+    {
+      "Date": "Mar 2023",
+      "TÜİK Monthly (%)": 2.29,
+      "TÜİK Annualized (%)": 50.51
+    },
+    {
+      "Date": "Nis 2023",
+      "TÜİK Monthly (%)": 2.39,
+      "TÜİK Annualized (%)": 43.69
+    },
+    {
+      "Date": "May 2023",
+      "TÜİK Monthly (%)": 0.04,
+      "TÜİK Annualized (%)": 39.59
+    },
+    {
+      "Date": "Haz 2023",
+      "TÜİK Monthly (%)": 3.92,
+      "TÜİK Annualized (%)": 38.22
+    },
+    {
+      "Date": "Tem 2023",
+      "TÜİK Monthly (%)": 9.49,
+      "TÜİK Annualized (%)": 47.83
+    },
+    {
+      "Date": "Ağu 2023",
+      "TÜİK Monthly (%)": 9.09,
+      "TÜİK Annualized (%)": 58.95
+    },
+    {
+      "Date": "Eyl 2023",
+      "TÜİK Monthly (%)": 4.75,
+      "TÜİK Annualized (%)": 61.53
+    },
+    {
+      "Date": "Eki 2023",
+      "TÜİK Monthly (%)": 3.43,
+      "TÜİK Annualized (%)": 61.35
+    },
+    {
+      "Date": "Kas 2023",
+      "TÜİK Monthly (%)": 3.28,
+      "TÜİK Annualized (%)": 61.98
+    },
+    {
+      "Date": "Ara 2023",
+      "TÜİK Monthly (%)": 2.93,
+      "TÜİK Annualized (%)": 64.78
+    },
+    {
+      "Date": "Oca 2024",
+      "TÜİK Monthly (%)": 6.70,
+      "TÜİK Annualized (%)": 64.86
+    },
+    {
+      "Date": "Şub 2024",
+      "TÜİK Monthly (%)": 4.53,
+      "TÜİK Annualized (%)": 67.07
+    },
+    {
+      "Date": "Mar 2024",
+      "TÜİK Monthly (%)": 3.16,
+      "TÜİK Annualized (%)": 68.49
+    },
+    {
+      "Date": "Nis 2024",
+      "TÜİK Monthly (%)": 3.18,
+      "TÜİK Annualized (%)": 69.79
+    },
+    {
+      "Date": "May 2024",
+      "TÜİK Monthly (%)": 3.37,
+      "TÜİK Annualized (%)": 75.44
+    },
+    {
+      "Date": "Haz 2024",
+      "TÜİK Monthly (%)": 1.64,
+      "TÜİK Annualized (%)": 71.59
+    },
+    {
+      "Date": "Tem 2024",
+      "TÜİK Monthly (%)": 3.23,
+      "TÜİK Annualized (%)": 61.78
+    },
+    {
+      "Date": "Ağu 2024",
+      "TÜİK Monthly (%)": 2.47,
+      "TÜİK Annualized (%)": 51.96
+    },
+    {
+      "Date": "Eyl 2024",
+      "TÜİK Monthly (%)": 2.97,
+      "TÜİK Annualized (%)": 49.38
+    },
+    {
+      "Date": "Eki 2024",
+      "TÜİK Monthly (%)": 2.88,
+      "TÜİK Annualized (%)": 48.58
+    },
+    {
+      "Date": "Kas 2024",
+      "TÜİK Monthly (%)": 2.24,
+      "TÜİK Annualized (%)": 47.09
+    },
+    {
+      "Date": "Ara 2024",
+      "TÜİK Monthly (%)": 1.03,
+      "TÜİK Annualized (%)": 44.37
+    },
+     {
+      "Date": "Oca 2025",
+      "TÜİK Monthly (%)": 5.03,
+      "TÜİK Annualized (%)": 42.11
+    },
+     {
+      "Date": "Şub 2025",
+      "TÜİK Monthly (%)": 2.27,
+      "TÜİK Annualized (%)": 39.04
+    },
+     {
+      "Date": "Mar 2025",
+      "TÜİK Monthly (%)": 2.46,
+      "TÜİK Annualized (%)": 38.10
+    },
+     {
+      "Date": "Nis 2025",
+      "TÜİK Monthly (%)": 3.00,
+      "TÜİK Annualized (%)": 37.86
+    }
+        
+  ]
+}
