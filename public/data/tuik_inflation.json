@@ -275,7 +275,33 @@
       "Date": "Nis 2025",
       "TÜİK Monthly (%)": 3.00,
       "TÜİK Annualized (%)": 37.86
-    }
+    },
+    {
+      "Date": "May 2025",
+      "TÜİK Monthly (%)": 1.53,
+      "TÜİK Annualized (%)": 35.41
+    },
+  {
+      "Date": "Haz 2025",
+      "TÜİK Monthly (%)": 1.37,
+      "TÜİK Annualized (%)": 35.05
+  },
+  {
+      "Date": "Tem 2025",
+      "TÜİK Monthly (%)": 2.06,
+      "TÜİK Annualized (%)": 33.52
+  },
+  {
+      "Date": "Ağu 2025",
+      "TÜİK Monthly (%)": 2.04,
+      "TÜİK Annualized (%)": 32.95
+  },
+  {
+      "Date": "Eyl 2025",
+      "TÜİK Monthly (%)": 3.23,
+      "TÜİK Annualized (%)": 33.29
+  }
+
         
   ]
 }
