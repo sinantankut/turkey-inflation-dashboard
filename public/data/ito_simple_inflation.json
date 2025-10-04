@@ -548,5 +548,56 @@
         "ytd_change_pct": 16.25,
         "yoy_change_pct": 47.21
         }
-    }
+    },
+    {
+      "year": 2025,
+      "month": "Mayıs",
+      "release_date": "2025-06-01",
+      "cpi_wage_earners": {
+        "mom_change_pct": 2.83,
+        "ytd_change_pct": 19.53,
+        "yoy_change_pct": 46.57
+      }
+    },
+    {
+      "year": 2025,
+      "month": "Haziran",
+      "release_date": "2025-07-01",
+      "cpi_wage_earners": {
+        "mom_change_pct": 1.77,
+        "ytd_change_pct": 20.63,
+        "yoy_change_pct": 44.38
+      }
+    },
+    {
+      "year": 2025,
+      "month": "Temmuz",
+      "release_date": "2025-08-01",
+      "cpi_wage_earners": {
+        "mom_change_pct": 2.62,
+        "ytd_change_pct": 23.80,
+        "yoy_change_pct": 42.48
+      }
+    },
+    {
+      "year": 2025,
+      "month": "Ağustos",
+      "release_date": "2025-09-01",
+      "cpi_wage_earners": {
+        "mom_change_pct": 1.84,
+        "ytd_change_pct": 26.07,
+        "yoy_change_pct": 40.83
+      }
+    },
+    {
+      "year": 2025,
+      "month": "Eylül",
+      "release_date": "2025-10-01",
+      "cpi_wage_earners": {
+        "mom_change_pct": 3.19,
+        "ytd_change_pct": 30.10,
+        "yoy_change_pct": 40.75
+      }
+}
+
 ]
