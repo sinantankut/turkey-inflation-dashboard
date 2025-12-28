@@ -2,7 +2,7 @@
 
 A web-based dashboard for visualizing and analyzing inflation trends in Turkey. This project provides an accessible interface for comparing inflation data from multiple major indices (TÜİK, İTO, ENAG), allowing for a comprehensive view of Turkey's economic trajectory.
 
-**Live Site:** (https://sinantankutgulhan.com/turkiyede-enflasyon-olcumu-tuik-ve-enag-verileri-karsilastirmasi/)
+**Live Site:** ([Türkiye'de üçlü enflasyon göstergesi paneli](https://sinantankutgulhan.com/turkiyede-enflasyon-enag-tuik-ve-ito-karsilastirmasi/))
 
 ## 📋 Overview
 
