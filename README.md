@@ -30,11 +30,35 @@ It is designed for students, researchers, and the general public interested in t
 
 ## 📊 Data & Methodology
 
-The dashboard processes inflation data on the client-side. The application fetches pre-processed JSON datasets located in the public directory:
+The dashboard processes inflation data on the client-side. By default, the application fetches pre-processed JSON datasets located in the public directory:
 
 1.  `tuik_inflation.json` - Official state data.
 2.  `ito_simple_inflation.json` - Retail price indices for Istanbul.
 3.  `enag_inflation.json` - Alternative academic inflation research data.
+
+### Google Sheets updates
+
+To update the dashboard without rebuilding the static JSON files, publish a Google Sheet as CSV and set this Vite environment variable:
+
+```bash
+VITE_GOOGLE_SHEETS_CSV_URL="https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/edit?usp=sharing"
+```
+
+The app accepts the regular Google Sheets edit URL and converts it to a CSV endpoint automatically. The sheet must be visible to the deployed dashboard, so use a published/public sheet for the static frontend. Keep a private sheet only if you add a backend proxy or authenticated API layer.
+
+Use one row per month with these columns:
+
+| Column | Example |
+| --- | --- |
+| `Date` | `Mar 2025` or `Mart 2025` |
+| `TÜİK Monthly (%)` | `2.46` |
+| `TÜİK Annualized (%)` | `38.10` |
+| `ENAG Monthly (%)` | `3.91` |
+| `ENAG Annualized (%)` | `75.20` |
+| `İTO Monthly (%)` | `3.79` |
+| `İTO Annualized (%)` | `46.23` |
+
+Alternatively, replace `Date` with separate `Year` and `Month` columns. The loader accepts Turkish month names and common English month names. If the Google Sheet cannot be loaded, the app falls back to the bundled JSON files.
 
 *> **Note:** This project is for educational and analytical purposes. While efforts are made to ensure data accuracy, users should verify figures with official institutions for citation purposes.*
 

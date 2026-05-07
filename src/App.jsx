@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import InflationDashboard from './components/InflationDashboard';
 import LoadingScreen from './components/LoadingScreen';
+import { fetchInflationData } from './data/inflationData';
 
 function App() {
   const [itoData, setItoData] = useState(null);
@@ -12,23 +13,11 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // In a production environment with Firebase, use the storage paths
-        // For development, these can be placed in the public directory
-        const itoResponse = await fetch('/data/ito_simple_inflation.json');
-        const tuikResponse = await fetch('/data/tuik_inflation.json');
-        const enagResponse = await fetch('/data/enag_inflation.json');
-        
-        if (!itoResponse.ok || !tuikResponse.ok || !enagResponse.ok) {
-          throw new Error('Failed to fetch data files');
-        }
-        
-        const itoJson = await itoResponse.json();
-        const tuikJson = await tuikResponse.json();
-        const enagJson = await enagResponse.json();
-        
-        setItoData(itoJson);
-        setTuikData(tuikJson);
-        setEnagData(enagJson);
+        const { itoData, tuikData, enagData } = await fetchInflationData();
+
+        setItoData(itoData);
+        setTuikData(tuikData);
+        setEnagData(enagData);
         setLoading(false);
       } catch (error) {
         console.error('Error fetching data:', error);

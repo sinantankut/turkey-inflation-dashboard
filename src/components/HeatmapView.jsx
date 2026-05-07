@@ -141,7 +141,7 @@ const HeatmapView = ({ combinedData, dataSource = 'tuik', timeframe = 'all' }) =
             <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sticky left-0 z-10 bg-gray-50">
               Yıl
             </th>
-            {organizedData.months.map((month, index) => (
+            {organizedData.months.map((month) => (
               <th key={month} className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                 {month}
               </th>
