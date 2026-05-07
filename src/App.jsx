@@ -7,17 +7,19 @@ function App() {
   const [itoData, setItoData] = useState(null);
   const [tuikData, setTuikData] = useState(null);
   const [enagData, setEnagData] = useState(null);
+  const [combinedData, setCombinedData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const { itoData, tuikData, enagData } = await fetchInflationData();
+        const { itoData, tuikData, enagData, combinedData } = await fetchInflationData();
 
         setItoData(itoData);
         setTuikData(tuikData);
         setEnagData(enagData);
+        setCombinedData(combinedData ?? null);
         setLoading(false);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -57,6 +59,7 @@ function App() {
       itoData={itoData}
       tuikData={tuikData}
       enagData={enagData}
+      sourceCombinedData={combinedData}
     />
   );
 }

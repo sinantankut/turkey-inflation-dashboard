@@ -4,6 +4,8 @@ const STATIC_DATA_PATHS = {
   enag: '/data/enag_inflation.json'
 };
 
+const DEFAULT_GOOGLE_SHEETS_CSV_URL = 'https://docs.google.com/spreadsheets/d/11ZOr-9IsO-R4oDQLFG2B2NAh0ETi1s2WjyTGj9J8nH8/edit?gid=299037711#gid=299037711';
+
 const MONTHS = [
   { short: 'Oca', full: 'Ocak', aliases: ['oca', 'ocak', 'jan', 'january', '01', '1'] },
   { short: 'Şub', full: 'Şubat', aliases: ['şub', 'sub', 'şubat', 'subat', 'feb', 'february', '02', '2'] },
@@ -32,7 +34,7 @@ const HEADER_ALIASES = {
 };
 
 export async function fetchInflationData() {
-  const googleSheetsCsvUrl = import.meta.env.VITE_GOOGLE_SHEETS_CSV_URL?.trim();
+  const googleSheetsCsvUrl = import.meta.env?.VITE_GOOGLE_SHEETS_CSV_URL?.trim() || DEFAULT_GOOGLE_SHEETS_CSV_URL;
 
   if (googleSheetsCsvUrl) {
     try {
@@ -100,7 +102,7 @@ function toCsvUrl(rawUrl) {
   }
 }
 
-function parseCsv(csv) {
+export function parseCsv(csv) {
   const rows = [];
   let row = [];
   let value = '';
@@ -150,7 +152,7 @@ function normalizeHeader(header) {
   return Object.entries(HEADER_ALIASES).find(([, aliases]) => aliases.some((alias) => normalizeText(alias) === normalized))?.[0];
 }
 
-function rowsToInflationData(rows) {
+export function rowsToInflationData(rows) {
   const normalizedRows = rows
     .map(normalizeSheetRow)
     .filter(Boolean)
@@ -161,6 +163,16 @@ function rowsToInflationData(rows) {
   }
 
   return {
+    combinedData: normalizedRows.map((row) => ({
+      date: row.date,
+      timestamp: row.timestamp,
+      tuikMonthly: row.tuikMonthly,
+      tuikAnnual: row.tuikAnnual,
+      enagMonthly: row.enagMonthly,
+      enagAnnual: row.enagAnnual,
+      itoMonthly: row.itoMonthly,
+      itoAnnual: row.itoAnnual
+    })),
     tuikData: {
       description: 'TÜİK Inflation Data loaded from Google Sheets',
       data: normalizedRows.map((row) => ({
@@ -219,17 +231,18 @@ function parsePeriod(row) {
 
   if (!dateValue) return null;
 
+  const [monthPart, yearPart] = dateValue.split(/\s+|-|\//).filter(Boolean);
+  const monthIndex = monthIndexFromValue(monthPart);
+  const year = parseInt(yearPart, 10);
+
+  if (!Number.isNaN(year) && monthIndex !== -1) return periodParts(year, monthIndex);
+
   const parsedDate = new Date(dateValue);
   if (!Number.isNaN(parsedDate.getTime())) {
     return periodParts(parsedDate.getFullYear(), parsedDate.getMonth());
   }
 
-  const [monthPart, yearPart] = dateValue.split(/\s+|-|\//).filter(Boolean);
-  const monthIndex = monthIndexFromValue(monthPart);
-  const year = parseInt(yearPart, 10);
-
-  if (Number.isNaN(year) || monthIndex === -1) return null;
-  return periodParts(year, monthIndex);
+  return null;
 }
 
 function periodParts(year, monthIndex) {

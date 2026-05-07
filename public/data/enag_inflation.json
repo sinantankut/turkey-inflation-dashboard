@@ -1,5 +1,5 @@
 {
-  "description": "ENAG Inflation Data (Monthly and Annualized) from October 2020 to March 2025",
+  "description": "ENAG Inflation Data loaded from Google Sheets",
   "data": [
     {
       "Date": "Eki 2020",
@@ -63,7 +63,7 @@
     },
     {
       "Date": "Eki 2021",
-      "ENAG Monthly (%)": 6.90,
+      "ENAG Monthly (%)": 6.9,
       "ENAG Annualized (%)": 54.34
     },
     {
@@ -114,11 +114,11 @@
     {
       "Date": "Ağu 2022",
       "ENAG Monthly (%)": 5.86,
-      "ENAG Annualized (%)": 171.50
+      "ENAG Annualized (%)": 171.5
     },
     {
       "Date": "Eyl 2022",
-      "ENAG Monthly (%)": 5.30,
+      "ENAG Monthly (%)": 5.3,
       "ENAG Annualized (%)": 177.86
     },
     {
@@ -199,7 +199,7 @@
     {
       "Date": "Oca 2024",
       "ENAG Monthly (%)": 9.38,
-      "ENAG Annualized (%)": 127.10
+      "ENAG Annualized (%)": 127.1
     },
     {
       "Date": "Şub 2024",
@@ -256,25 +256,25 @@
       "ENAG Monthly (%)": 2.34,
       "ENAG Annualized (%)": 81.07
     },
-     {
+    {
       "Date": "Oca 2025",
       "ENAG Monthly (%)": 8.22,
       "ENAG Annualized (%)": 79.15
     },
-     {
+    {
       "Date": "Şub 2025",
       "ENAG Monthly (%)": 3.37,
       "ENAG Annualized (%)": 77.52
     },
-     {
+    {
       "Date": "Mar 2025",
       "ENAG Monthly (%)": 3.91,
       "ENAG Annualized (%)": 74.55
     },
     {
-        "Date": "Nis 2025",
-        "ENAG Monthly (%)": 4.46,
-        "ENAG Annualized (%)": 73.88
+      "Date": "Nis 2025",
+      "ENAG Monthly (%)": 4.46,
+      "ENAG Annualized (%)": 73.88
     },
     {
       "Date": "May 2025",
@@ -300,6 +300,21 @@
       "Date": "Eyl 2025",
       "ENAG Monthly (%)": 3.79,
       "ENAG Annualized (%)": 63.23
-    }    
+    },
+    {
+      "Date": "Eki 2025",
+      "ENAG Monthly (%)": 3.74,
+      "ENAG Annualized (%)": 60
+    },
+    {
+      "Date": "Kas 2025",
+      "ENAG Monthly (%)": 2.13,
+      "ENAG Annualized (%)": 56.82
+    },
+    {
+      "Date": "Ara 2025",
+      "ENAG Monthly (%)": 2.11,
+      "ENAG Annualized (%)": 56.14
+    }
   ]
 }
