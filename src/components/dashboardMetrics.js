@@ -115,14 +115,14 @@ export function formatPercent(value) {
   return Number.isFinite(value) ? `${value.toFixed(2)}%` : 'N/A';
 }
 
-export function formatPoints(value) {
+export function formatPoints(value, units = { points: 'puan' }) {
   if (!Number.isFinite(value)) return 'N/A';
   const sign = value > 0 ? '+' : '';
-  return `${sign}${value.toFixed(2)} puan`;
+  return `${sign}${value.toFixed(2)} ${units.points}`;
 }
 
-export function formatMetric(value, mode) {
-  return mode === 'difference' ? formatPoints(value) : formatPercent(value);
+export function formatMetric(value, mode, units) {
+  return mode === 'difference' ? formatPoints(value, units) : formatPercent(value);
 }
 
 function average(values) {

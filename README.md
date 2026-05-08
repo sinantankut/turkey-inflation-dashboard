@@ -26,7 +26,7 @@ It is designed for students, researchers, and the general public interested in t
 * **Build Tool:** [Vite](https://vitejs.dev/)
 * **Styling:** [Tailwind CSS](https://tailwindcss.com/) for utility-first styling.
 * **Data Handling:** Asynchronous fetch of static JSON datasets.
-* **Deployment:** Firebase Hosting.
+* **Deployment:** Firebase Hosting for the Turkish dashboard; Vercel for the separate English dashboard.
 
 ## 📊 Data & Methodology
 
@@ -59,6 +59,26 @@ Use one row per month with these columns:
 | `İTO Annualized (%)` | `46.23` |
 
 Alternatively, replace `Date` with separate `Year` and `Month` columns. The loader accepts Turkish month names and common English month names. If the Google Sheet cannot be loaded, the app falls back to the bundled JSON files.
+
+### Turkish and English deployments
+
+The Turkish dashboard remains the default build, so the existing Firebase deployment can continue using the current settings.
+
+For the separate English blog dashboard on Vercel, create a separate Vercel project from this repository and set:
+
+```bash
+VITE_DASHBOARD_LOCALE="en"
+```
+
+Use the same `VITE_GOOGLE_SHEETS_CSV_URL` value as the Turkish dashboard if you want both versions to update from the exact same Google Sheet. If this variable is omitted, both deployments use the default Google Sheets URL already configured in the app.
+
+Vercel settings:
+
+| Setting | Value |
+| --- | --- |
+| Framework preset | Vite |
+| Build command | `npm run build` |
+| Output directory | `dist` |
 
 *> **Note:** This project is for educational and analytical purposes. While efforts are made to ensure data accuracy, users should verify figures with official institutions for citation purposes.*
 

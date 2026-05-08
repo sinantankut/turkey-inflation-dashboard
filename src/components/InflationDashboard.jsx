@@ -13,7 +13,6 @@ import {
 import { BarChart3, CalendarDays, TrendingUp } from 'lucide-react';
 import {
   DIFFERENCE_META,
-  MODE_META,
   formatMetric,
   getLatestEntry,
   getLatestValues,
@@ -23,10 +22,11 @@ import {
   getSeriesRangeLabel,
   toChartData
 } from './dashboardMetrics';
+import { formatDateLabel, formatRangeLabel, getDashboardText } from './dashboardText';
 
 const REFERENCE_LEVELS = [3, 5, 10, 20];
 
-const InflationDashboard = ({ itoData, tuikData, enagData, sourceCombinedData }) => {
+const InflationDashboard = ({ itoData, tuikData, enagData, sourceCombinedData, text = getDashboardText() }) => {
   const [analysisMode, setAnalysisMode] = useState('monthly');
   const [combinedData, setCombinedData] = useState([]);
 
@@ -42,15 +42,15 @@ const InflationDashboard = ({ itoData, tuikData, enagData, sourceCombinedData })
   }, [itoData, tuikData, enagData, sourceCombinedData]);
 
   const latest = useMemo(() => getLatestEntry(combinedData), [combinedData]);
-  const rangeLabel = useMemo(() => getSeriesRangeLabel(combinedData), [combinedData]);
+  const rangeLabel = useMemo(() => formatRangeLabel(getSeriesRangeLabel(combinedData), text), [combinedData, text]);
   const chartData = useMemo(() => toChartData(combinedData, analysisMode), [combinedData, analysisMode]);
   const averages = useMemo(() => getPeriodAverages(combinedData, analysisMode), [combinedData, analysisMode]);
   const latestValues = useMemo(() => getLatestValues(combinedData, analysisMode), [combinedData, analysisMode]);
   const deltas = useMemo(() => getPreviousDeltas(combinedData, analysisMode), [combinedData, analysisMode]);
   const metricMeta = getMetricMeta(analysisMode);
   const visibleKeys = Object.keys(metricMeta);
-  const chartTitle = MODE_META[analysisMode].title;
-  const chartDescription = MODE_META[analysisMode].description;
+  const chartTitle = text.mode[analysisMode].title;
+  const chartDescription = text.mode[analysisMode].description;
 
   const yAxisTicks = useMemo(() => {
     const values = chartData.flatMap((item) => visibleKeys.map((key) => item[key]).filter(Number.isFinite));
@@ -72,17 +72,17 @@ const InflationDashboard = ({ itoData, tuikData, enagData, sourceCombinedData })
             <div>
               <div className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-slate-500">
                 <CalendarDays size={14} />
-                Son veri: {latest?.date ?? 'N/A'}
+                {text.lastDataLabel}: {formatDateLabel(latest?.date, text)}
               </div>
               <h1 className="text-2xl font-black leading-tight text-slate-950 sm:text-3xl">
-                Türkiye Enflasyon Gösterge Paneli
+                {text.title}
               </h1>
               <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-600">
-                TÜİK, ENAG ve İTO enflasyon serilerinin karşılaştırmalı görünümü.
+                {text.subtitle}
               </p>
             </div>
             <div className="rounded-xl bg-slate-50 px-3 py-2 text-sm text-slate-600">
-              <span className="font-semibold text-slate-900">Dönem:</span> {rangeLabel}
+              <span className="font-semibold text-slate-900">{text.periodLabel}:</span> {rangeLabel}
             </div>
           </div>
         </header>
@@ -97,13 +97,14 @@ const InflationDashboard = ({ itoData, tuikData, enagData, sourceCombinedData })
               averageValue={averages[key]}
               delta={deltas[key]}
               mode={analysisMode}
+              text={text}
             />
           ))}
         </section>
 
         <section className="mb-4 rounded-2xl border border-slate-200 bg-white p-3 shadow-sm sm:p-5">
           <div className="mb-4 grid grid-cols-3 rounded-xl bg-slate-100 p-1 text-center text-sm font-bold text-slate-600">
-            {Object.entries(MODE_META).map(([mode, meta]) => (
+            {Object.entries(text.mode).map(([mode, meta]) => (
               <button
                 key={mode}
                 type="button"
@@ -139,7 +140,7 @@ const InflationDashboard = ({ itoData, tuikData, enagData, sourceCombinedData })
                   angle={-45}
                   textAnchor="end"
                   tick={{ fontSize: 11, fill: '#64748b' }}
-                  tickFormatter={formatAxisDate}
+                  tickFormatter={(date) => formatAxisDate(date, text)}
                   height={58}
                   stroke="#cbd5e1"
                 />
@@ -151,7 +152,7 @@ const InflationDashboard = ({ itoData, tuikData, enagData, sourceCombinedData })
                   stroke="#cbd5e1"
                   width={42}
                 />
-                <Tooltip content={<ChartTooltip mode={analysisMode} metricMeta={metricMeta} />} cursor={{ stroke: '#94a3b8', strokeDasharray: '4 4' }} />
+                <Tooltip content={<ChartTooltip mode={analysisMode} metricMeta={metricMeta} text={text} />} cursor={{ stroke: '#94a3b8', strokeDasharray: '4 4' }} />
                 <Legend iconType="circle" wrapperStyle={{ paddingTop: 12 }} />
                 {REFERENCE_LEVELS.map((level) => (
                   <ReferenceLine
@@ -181,54 +182,54 @@ const InflationDashboard = ({ itoData, tuikData, enagData, sourceCombinedData })
         </section>
 
         <section className="mb-4 grid grid-cols-1 gap-4 lg:grid-cols-[1.2fr_.8fr]">
-          <RecentTable data={combinedData} />
-          <DifferenceSummary data={combinedData} />
+          <RecentTable data={combinedData} text={text} />
+          <DifferenceSummary data={combinedData} text={text} />
         </section>
 
         <footer className="rounded-2xl border border-slate-200 bg-white p-4 text-xs leading-5 text-slate-500 shadow-sm sm:p-5">
           <p>
-            Veri kaynakları: TÜİK ve İTO verileri kurumların yayımladığı serilerden; ENAG verileri ENAG'ın kamuya açık duyurularından derlenmiştir.
+            {text.sourceFooter}
           </p>
-          <p className="mt-2">© {new Date().getFullYear()} Sinan Tankut Gülhan. Tüm hakları saklıdır.</p>
+          <p className="mt-2">© {new Date().getFullYear()} Sinan Tankut Gülhan. {text.rightsFooter}</p>
         </footer>
       </div>
     </main>
   );
 };
 
-const MetricCard = ({ meta, latestDate, latestValue, averageValue, delta, mode }) => (
+const MetricCard = ({ meta, latestDate, latestValue, averageValue, delta, mode, text }) => (
   <article className={`rounded-2xl border ${meta.borderClass} ${meta.bgClass} p-4 shadow-sm`}>
     <div className="flex items-center justify-between gap-2">
       <h3 className="text-sm font-black text-slate-700">{meta.label}</h3>
       <TrendingUp className={meta.textClass} size={16} />
     </div>
-    <div className={`mt-3 text-3xl font-black ${meta.textClass}`}>{formatMetric(latestValue, mode)}</div>
-    <div className="mt-1 text-xs text-slate-500">{latestDate ?? 'N/A'}</div>
+    <div className={`mt-3 text-3xl font-black ${meta.textClass}`}>{formatMetric(latestValue, mode, text.units)}</div>
+    <div className="mt-1 text-xs text-slate-500">{formatDateLabel(latestDate, text)}</div>
     <div className="mt-4 flex items-end justify-between gap-2 border-t border-white/70 pt-3">
       <div>
-        <div className="text-[11px] font-bold uppercase tracking-wide text-slate-500">Dönem ort.</div>
-        <div className="mt-1 text-sm font-black text-slate-900">{formatMetric(averageValue, mode)}</div>
+        <div className="text-[11px] font-bold uppercase tracking-wide text-slate-500">{text.periodAverageLabel}</div>
+        <div className="mt-1 text-sm font-black text-slate-900">{formatMetric(averageValue, mode, text.units)}</div>
       </div>
       <div className={`text-right text-xs font-bold ${Number.isFinite(delta) && delta > 0 ? 'text-red-600' : 'text-emerald-700'}`}>
-        {Number.isFinite(delta) ? formatMetric(delta, 'difference') : 'N/A'}
+        {Number.isFinite(delta) ? formatMetric(delta, 'difference', text.units) : 'N/A'}
       </div>
     </div>
   </article>
 );
 
-const ChartTooltip = ({ active, payload, label, mode, metricMeta }) => {
+const ChartTooltip = ({ active, payload, label, mode, metricMeta, text }) => {
   if (!active || !payload?.length) return null;
 
   return (
     <div className="rounded-xl border border-slate-200 bg-white/95 p-3 shadow-xl">
-      <div className="mb-2 text-sm font-black text-slate-950">{label}</div>
+      <div className="mb-2 text-sm font-black text-slate-950">{formatDateLabel(label, text)}</div>
       <div className="space-y-1">
         {payload.map((entry) => (
           <div key={entry.dataKey} className="flex min-w-36 items-center justify-between gap-4 text-sm">
             <span className="font-bold" style={{ color: metricMeta[entry.dataKey]?.color }}>
               {metricMeta[entry.dataKey]?.label ?? entry.name}
             </span>
-            <span className="text-slate-900">{formatMetric(entry.value, mode)}</span>
+            <span className="text-slate-900">{formatMetric(entry.value, mode, text.units)}</span>
           </div>
         ))}
       </div>
@@ -236,17 +237,17 @@ const ChartTooltip = ({ active, payload, label, mode, metricMeta }) => {
   );
 };
 
-const RecentTable = ({ data }) => {
+const RecentTable = ({ data, text }) => {
   const rows = useMemo(() => [...data].sort((left, right) => left.timestamp - right.timestamp).slice(-12).reverse(), [data]);
 
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-      <h2 className="text-lg font-black text-slate-950">Son 12 ay</h2>
+      <h2 className="text-lg font-black text-slate-950">{text.recentMonthsTitle}</h2>
       <div className="mt-3 overflow-x-auto">
         <table className="min-w-full text-left text-sm">
           <thead className="border-b border-slate-200 text-xs uppercase tracking-wide text-slate-500">
             <tr>
-              <th className="py-2 pr-3">Ay</th>
+              <th className="py-2 pr-3">{text.tableMonthHeader}</th>
               <th className="px-3 py-2">TÜİK</th>
               <th className="px-3 py-2">ENAG</th>
               <th className="px-3 py-2">İTO</th>
@@ -255,10 +256,10 @@ const RecentTable = ({ data }) => {
           <tbody className="divide-y divide-slate-100">
             {rows.map((row) => (
               <tr key={row.date}>
-                <td className="py-2 pr-3 font-bold text-slate-900">{row.date}</td>
-                <td className="px-3 py-2 text-blue-700">{formatMetric(row.tuikMonthly, 'monthly')}</td>
-                <td className="px-3 py-2 text-orange-700">{formatMetric(row.enagMonthly, 'monthly')}</td>
-                <td className="px-3 py-2 text-emerald-700">{formatMetric(row.itoMonthly, 'monthly')}</td>
+                <td className="py-2 pr-3 font-bold text-slate-900">{formatDateLabel(row.date, text)}</td>
+                <td className="px-3 py-2 text-blue-700">{formatMetric(row.tuikMonthly, 'monthly', text.units)}</td>
+                <td className="px-3 py-2 text-orange-700">{formatMetric(row.enagMonthly, 'monthly', text.units)}</td>
+                <td className="px-3 py-2 text-emerald-700">{formatMetric(row.itoMonthly, 'monthly', text.units)}</td>
               </tr>
             ))}
           </tbody>
@@ -268,23 +269,25 @@ const RecentTable = ({ data }) => {
   );
 };
 
-const DifferenceSummary = ({ data }) => {
+const DifferenceSummary = ({ data, text }) => {
   const averages = useMemo(() => getPeriodAverages(data, 'difference'), [data]);
   const latestValues = useMemo(() => getLatestValues(data, 'difference'), [data]);
   const latest = useMemo(() => getLatestEntry(data), [data]);
 
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-      <h2 className="text-lg font-black text-slate-950">Kaynak farkı</h2>
-      <p className="mt-1 text-sm text-slate-500">{latest?.date ?? 'Son ay'} ve dönem ortalaması</p>
+      <h2 className="text-lg font-black text-slate-950">{text.differenceTitle}</h2>
+      <p className="mt-1 text-sm text-slate-500">
+        {latest?.date ? formatDateLabel(latest.date, text) : text.latestMonthFallback} {text.differenceSubtitleSeparator} {text.periodAverageFullLabel}
+      </p>
       <div className="mt-4 space-y-3">
         {Object.entries(DIFFERENCE_META).map(([key, meta]) => (
           <div key={key} className="rounded-xl border border-slate-100 bg-slate-50 p-3">
             <div className="flex items-center justify-between gap-3">
               <span className="font-bold text-slate-800">{meta.label}</span>
-              <span className={`font-black ${meta.textClass}`}>{formatMetric(latestValues[key], 'difference')}</span>
+              <span className={`font-black ${meta.textClass}`}>{formatMetric(latestValues[key], 'difference', text.units)}</span>
             </div>
-            <div className="mt-1 text-xs text-slate-500">Dönem ort.: {formatMetric(averages[key], 'difference')}</div>
+            <div className="mt-1 text-xs text-slate-500">{text.periodAverageLabel}: {formatMetric(averages[key], 'difference', text.units)}</div>
           </div>
         ))}
       </div>
@@ -332,9 +335,10 @@ const convertTurkishMonthToIndex = (turkishMonth) => {
   return months[turkishMonth] ?? 0;
 };
 
-const formatAxisDate = (date) => {
+const formatAxisDate = (date, text) => {
   const [month, year] = date.split(' ');
-  return month === 'Oca' || month === 'Eki' ? `${month} ${year}` : year;
+  const localizedMonth = text.months?.[month] ?? month;
+  return month === 'Oca' || month === 'Eki' ? `${localizedMonth} ${year}` : year;
 };
 
 export default InflationDashboard;
